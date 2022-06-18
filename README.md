@@ -13,7 +13,7 @@ Like all systems, similar-in-nature, optical character recognition software trai
 Instead of reinventing the wheel and coming up with a very complex (but useful) solution, let's settle down a bit and use what's already offered.</p>
 
 <h3>Tesseract:</h3>
-The technology giant, Google, has been developing an OCR engine, Tesseract, which has a decades-long history since its original inception. It offers an API for a bunch of languages, though we'll focus on the Tesseract Java API.
+<p>The technology giant, Google, has been developing an OCR engine, Tesseract, which has a decades-long history since its original inception. It offers an API for a bunch of languages, though we'll focus on the Tesseract Java API.
 
 Tesseract is very easy to implement, and subsequently isn't overly powerful. It's mainly used for reading computer generated text on black and white images, which is done with decent accuracy. Although it's not really meant for real-world text.
 
@@ -22,17 +22,11 @@ For real-world, advanced Optical Character Recognition, we'd be better off using
 Maven Dependency
 To import the engine into our project, we simply have to add a dependency:
 
-<dependency>
-    <groupId>net.sourceforge.tess4j</groupId>
-    <artifactId>tess4j</artifactId>
-    <version>4.5.2</version>
-</dependency>
+![image](https://user-images.githubusercontent.com/101090514/174450096-0fced6af-b285-440e-82f6-293784f051f1.png)
 Optical Character Recognition
 Using Tesseract is absolutely effortless:
 
-Tesseract tesseract = new Tesseract();
-tesseract.setDatapath("E://DataScience//tessdata");
-System.out.println(tesseract.doOCR(new File("...")));
+![image](https://user-images.githubusercontent.com/101090514/174450125-8c4bf577-3682-4a76-8824-63e755ee712d.png)
 
 We firstly instantiate the Tesseract object and set the data path to the LSTM (Long Short-Term Memory) models pre-trained for your use.
 
@@ -52,7 +46,7 @@ Optical Character Recognition in Java is made easy with the help of Tesseract.
 
 Now, to make this a bit easier to use, let's transfer it into a very simple Spring Boot application to serve up the result in a more graphically pleasing way.
 
-First off, let's start by generating our project through Spring Initializr. Include the spring-boot-starter-web and spring-boot-starter-thymeleaf dependencies. We'll import Tesseract manually.
+First off, let's start by generating our project through Spring Initializr. Include the spring-boot-starter-web and spring-boot-starter-thymeleaf dependencies. We'll import Tesseract manually.</p>
 
 
 <h3>Controller:</h3>
@@ -70,12 +64,12 @@ Running this app will greet us with a plain interface:</p>
 
 ![image](https://user-images.githubusercontent.com/101090514/174449520-c9dd3140-1b3c-4411-b5fe-4b82e69e06e6.png)
 <p>Adding an image and submitting it will result in the text being extracted and the image shown on the screen And the resulting page:</p>
-![image](https://user-images.githubusercontent.com/101090514/174449548-c1b242dd-bd2e-4208-9c77-82e9962a35b8.png)
+![image](https://user-images.githubusercontent.com/101090514/174450033-29a4733f-c6be-452d-8ed5-db3e5b19e677.png)
 
 
 
 
-<h3>Conclusion:</h3?
+<h3>Conclusion:</h3>
 <p>Using Google's Tesseract engine, we built an extremely simple app that accepts an image through a form, extracts the textual contents from it and returns to us the submitted image.
 
 Optical Character Recognition can come in handy when you wish to digitize content, especially when it comes to documents. These are easy to scan and are fairly accurate when it comes to extracting content. Of course, it's always wise to proofread the resulting document for potential errors.</p>
