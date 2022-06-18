@@ -64,7 +64,7 @@ Running this app will greet us with a plain interface:</p>
 
 ![image](https://user-images.githubusercontent.com/101090514/174449520-c9dd3140-1b3c-4411-b5fe-4b82e69e06e6.png)
 <p>Adding an image and submitting it will result in the text being extracted and the image shown on the screen And the resulting page:</p>
-![image](https://user-images.githubusercontent.com/101090514/174450033-29a4733f-c6be-452d-8ed5-db3e5b19e677.png)
+![image](https://user-images.githubusercontent.com/101090514/174450271-a3274cb9-a82c-4f10-834b-1b5da526837b.png)
 
 
 
