@@ -1,16 +1,11 @@
-<h3>Introduction:</h3>
+<h2>Introduction:</h2>
                <p> Developing symbols which have some value is a trait unique to humans. Recognizing these symbols and understanding the letters on an image is absolutely normal for us. We never really grasp letters like computers do, we completely base our ability to read them on our sight.
 
-On the other hand, computers need something more concrete and organized to work with. They need a digital representation, not a graphical one.
+Optical Character Recognition (OCR) was devised as a way to allow computers to "read" graphical content as text, similar to how humans do. Of course these systems, while relatively accurate, can still be off quite a bit. Even if they are, fixing up the mistakes of the system is still a lot easier and faster than doing everything from scratch by hand.
 
-Sometimes, this simply isn't possible. Sometimes, we wish to automate a task of rewriting text from an image with our own hands.
+Like all systems, similar-in-nature, optical character recognition software trains on prepared datasets that feed it enough data to learn the difference between characters.
 
-For these tasks, Optical Character Recognition (OCR) was devised as a way to allow computers to "read" graphical content as text, similar to how humans do. Of course these systems, while relatively accurate, can still be off quite a bit. Even if they are, fixing up the mistakes of the system is still a lot easier and faster than doing everything from scratch by hand.
-
-Like all systems, similar-in-nature, optical character recognition software trains on prepared datasets that feed it enough data to learn the difference between characters. It's also very important how these networks learn, if we want to make them accurate, though this is a topic for another article.
-
-
-Instead of reinventing the wheel and coming up with a very complex (but useful) solution, let's settle down a bit and use what's already offered.</p>
+  Instead of reinventing the wheel and coming up with a very complex (but useful) solution, let's settle down a bit and use what's already offered.</p>
 
 <h3>Tesseract:</h3>
 <p>The technology giant, Google, has been developing an OCR engine, Tesseract, which has a decades-long history since its original inception. It offers an API for a bunch of languages, though we'll focus on the Tesseract Java API.
