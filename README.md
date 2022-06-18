@@ -1,6 +1,5 @@
 <h2>Introduction:</h2>
-            <ul>   <p> <li>Developing symbols which have some value is a trait unique to humans. Recognizing these symbols and understanding the letters on an image is absolutely normal for us. We never really grasp letters like computers do, we completely base our ability to read them on our sight.</li>
-
+<ul style="list-style-type:disc;">
 <li>Optical Character Recognition (OCR) was devised as a way to allow computers to "read" graphical content as text, similar to how humans do. Of course these systems, while relatively accurate, can still be off quite a bit. Even if they are, fixing up the mistakes of the system is still a lot easier and faster than doing everything from scratch by hand.</li>
 
 <li>Like all systems, similar-in-nature, optical character recognition software trains on prepared datasets that feed it enough data to learn the difference between characters.</li>
@@ -9,24 +8,24 @@
   </ul>
 
 <h2>Tesseract:</h2>
-<p>The technology giant, Google, has been developing an OCR engine, Tesseract, which has a decades-long history since its original inception. It offers an API for a bunch of languages, though we'll focus on the Tesseract Java API.
+<ul style="list-style-type:disc;">
+<p><li>The technology giant, Google, has been developing an OCR engine, Tesseract, which has a decades-long history since its original inception. It offers an API for a bunch of languages, though we'll focus on the Tesseract Java API.</li>
 
-Tesseract is very easy to implement, and subsequently isn't overly powerful. It's mainly used for reading computer generated text on black and white images, which is done with decent accuracy. Although it's not really meant for real-world text.
+<li>Tesseract is very easy to implement, and subsequently isn't overly powerful. It's mainly used for reading computer generated text on black and white images, which is done with decent accuracy. Although it's not really meant for real-world text.</li>
 
-For real-world, advanced Optical Character Recognition, we'd be better off using something like Google Vision, which we'll go over in another article.
+<li>For real-world, advanced Optical Character Recognition, we'd be better off using something like Google Vision, which we'll go over in another article.</li></p>
+            </ul>
 
-Maven Dependency
+<h2>Maven Dependency</h2>
 To import the engine into our project, we simply have to add a dependency:
 
 ![image](https://user-images.githubusercontent.com/101090514/174450096-0fced6af-b285-440e-82f6-293784f051f1.png)
-Optical Character Recognition
+<h2>Optical Character Recognition:</h2>
 Using Tesseract is absolutely effortless:
 
 ![image](https://user-images.githubusercontent.com/101090514/174450125-8c4bf577-3682-4a76-8824-63e755ee712d.png)
 
-We firstly instantiate the Tesseract object and set the data path to the LSTM (Long Short-Term Memory) models pre-trained for your use.
-
-The data can be downloaded from the official GitHub account.
+We firstly instantiate the Tesseract object and set the data path to the LSTM (Long Short-Term Memory) models pre-trained for your use.The data can be downloaded from the official GitHub account.
 
 Afterwards, we call the doOCR() method, which accepts a file and returns a String - the extracted content.
 
@@ -46,11 +45,13 @@ First off, let's start by generating our project through Spring Initializr. Incl
 
 
 <h2>Controller:</h2>
-<p>The app doesn't need more than a single controller, which serves up our two views and handles the picture upload and optical character recognition.
+<ul style="list-style-type:disc;">
+<p><li>The app doesn't need more than a single controller, which serves up our two views and handles the picture upload and optical character recognition.</li>
 
 
 
-Tesseract works with Java's Files, but doesn't support MultipartFile, which we get by accepting a file through our form. To mitigate this, we've added a simple convert() method, which converts the MultipartFile into a regular File.</p>
+<li>Tesseract works with Java's Files, but doesn't support MultipartFile, which we get by accepting a file through our form. To mitigate this, we've added a simple convert() method, which converts the MultipartFile into a regular File.</p></li>
+</ul>
 
 Once we've extracted the text using Tesseract, we simply add it to the model, alongside the scanned image and append it to the redirected view - result.</p>
 
@@ -66,6 +67,8 @@ Running this app will greet us with a plain interface:</p>
 
 
 <h2>Conclusion:</h2>
-<p>Using Google's Tesseract engine, we built an extremely simple app that accepts an image through a form, extracts the textual contents from it and returns to us the submitted image.
+<ul style="list-style-type:disc;">
+<p><li>Using Google's Tesseract engine, we built an extremely simple app that accepts an image through a form, extracts the textual contents from it and returns to us the submitted image.</li>
 
-Optical Character Recognition can come in handy when you wish to digitize content, especially when it comes to documents. These are easy to scan and are fairly accurate when it comes to extracting content. Of course, it's always wise to proofread the resulting document for potential errors.</p>
+<li>Optical Character Recognition can come in handy when you wish to digitize content, especially when it comes to documents. These are easy to scan and are fairly accurate when it comes to extracting content. Of course, it's always wise to proofread the resulting document for potential errors.</li></p>
+            </ul>
