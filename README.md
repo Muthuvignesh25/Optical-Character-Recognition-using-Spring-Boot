@@ -1,5 +1,5 @@
-,h3>Introduction:<h3/>
-                Developing symbols which have some value is a trait unique to humans. Recognizing these symbols and understanding the letters on an image is absolutely normal for us. We never really grasp letters like computers do, we completely base our ability to read them on our sight.
+<h3>Introduction:</h3>
+               <p> Developing symbols which have some value is a trait unique to humans. Recognizing these symbols and understanding the letters on an image is absolutely normal for us. We never really grasp letters like computers do, we completely base our ability to read them on our sight.
 
 On the other hand, computers need something more concrete and organized to work with. They need a digital representation, not a graphical one.
 
@@ -10,7 +10,7 @@ For these tasks, Optical Character Recognition (OCR) was devised as a way to all
 Like all systems, similar-in-nature, optical character recognition software trains on prepared datasets that feed it enough data to learn the difference between characters. It's also very important how these networks learn, if we want to make them accurate, though this is a topic for another article.
 
 
-Instead of reinventing the wheel and coming up with a very complex (but useful) solution, let's settle down a bit and use what's already offered.
+Instead of reinventing the wheel and coming up with a very complex (but useful) solution, let's settle down a bit and use what's already offered.</p>
 
 Tesseract
 The technology giant, Google, has been developing an OCR engine, Tesseract, which has a decades-long history since its original inception. It offers an API for a bunch of languages, though we'll focus on the Tesseract Java API.
