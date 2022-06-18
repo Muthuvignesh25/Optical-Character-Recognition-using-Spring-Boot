@@ -1,5 +1,5 @@
 <h2>Introduction:</h2>
-<ul style="list-style-type:disc;">
+<ul style="list-style-type:none;">
 <li>Optical Character Recognition (OCR) was devised as a way to allow computers to "read" graphical content as text, similar to how humans do. Of course these systems, while relatively accurate, can still be off quite a bit. Even if they are, fixing up the mistakes of the system is still a lot easier and faster than doing everything from scratch by hand.</li>
 
 <li>Like all systems, similar-in-nature, optical character recognition software trains on prepared datasets that feed it enough data to learn the difference between characters.</li>
@@ -8,7 +8,7 @@
   </ul>
 
 <h2>Tesseract:</h2>
-<ul style="list-style-type:disc;">
+<ul style="list-style-type:square;">
 <p><li>The technology giant, Google, has been developing an OCR engine, Tesseract, which has a decades-long history since its original inception. It offers an API for a bunch of languages, though we'll focus on the Tesseract Java API.</li>
 
 <li>Tesseract is very easy to implement, and subsequently isn't overly powerful. It's mainly used for reading computer generated text on black and white images, which is done with decent accuracy. Although it's not really meant for real-world text.</li>
