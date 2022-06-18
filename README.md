@@ -14,7 +14,7 @@
 <li>For real-world, advanced Optical Character Recognition, we'd be better off using something like Google Vision, which we'll go over in another article.</li></p>
             </ul>
 
-<h2>Maven Dependency</h2>
+<h2>Maven Dependency:</h2>
 To import the engine into our project, we simply have to add a dependency:
 
 ![image](https://user-images.githubusercontent.com/101090514/174450096-0fced6af-b285-440e-82f6-293784f051f1.png)
