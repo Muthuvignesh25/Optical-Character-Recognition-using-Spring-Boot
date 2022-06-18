@@ -4,7 +4,7 @@
 
     <li>Like all systems, similar-in-nature, optical character recognition software trains on prepared datasets that feed it enough data to learn the difference between characters.</li>
 
-    <li>Instead of reinventing the wheel and coming up with a very complex (but useful) solution, let's settle down a bit and use what's already offered.</li>
+    <li>Instead of reinventing the wheel and coming up with a very complex (but useful) solution, let's settle down a bit and use what's already offered.</li></p>
 </ul>
 
 <h2>Tesseract:</h2>
