@@ -1,5 +1,5 @@
 <h2>Introduction:</h2>
-<ul style="list-style-type:none;">
+<ul style="list-style-type:square;">
 <li>Optical Character Recognition (OCR) was devised as a way to allow computers to "read" graphical content as text, similar to how humans do. Of course these systems, while relatively accurate, can still be off quite a bit. Even if they are, fixing up the mistakes of the system is still a lot easier and faster than doing everything from scratch by hand.</li>
 <li>Like all systems, similar-in-nature, optical character recognition software trains on prepared datasets that feed it enough data to learn the difference between characters.</li>
 <li>Instead of reinventing the wheel and coming up with a very complex (but useful) solution, let's settle down a bit and use what's already offered.</li></p>
@@ -43,7 +43,7 @@ First off, let's start by generating our project through Spring Initializr. Incl
 
 
 <h2>Controller:</h2>
-<ul style="list-style-type:disc;">
+<ul style="list-style-type:square;">
 <p><li>The app doesn't need more than a single controller, which serves up our two views and handles the picture upload and optical character recognition.</li>
 
 
@@ -65,7 +65,7 @@ Running this app will greet us with a plain interface:</p>
 
 
 <h2>Conclusion:</h2>
-<ul style="list-style-type:disc;">
+<ul style="list-style-type:square;">
 <p><li>Using Google's Tesseract engine, we built an extremely simple app that accepts an image through a form, extracts the textual contents from it and returns to us the submitted image.</li>
 
 <li>Optical Character Recognition can come in handy when you wish to digitize content, especially when it comes to documents. These are easy to scan and are fairly accurate when it comes to extracting content. Of course, it's always wise to proofread the resulting document for potential errors.</li></p>
